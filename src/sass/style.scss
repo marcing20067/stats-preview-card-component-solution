@@ -59,16 +59,16 @@ body {
 }
 
 @media (min-width: 1024px) {
-    .image {
+    .min-width-fit {
         min-width: fit-content;
     }
     
-    .hero-box {
+    .w-min-w-fit {
         width: fit-content;
         min-width: fit-content;
     }
 
-    .my-min-width {
+    .min-w-58 {
         min-width: 58rem;
     }
 }
