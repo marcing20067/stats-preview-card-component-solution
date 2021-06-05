@@ -15,6 +15,9 @@ body {
     font-size: 93.75%;
 }
 
+.bg-white {
+}
+
 .bg-dblue {
     background-color: $veryDarkBlue;
 }
@@ -47,7 +50,7 @@ body {
     font-family: "Lexend Deca", sans-serif;
 }
 
-.hero-box::after {
+.image-box-after::after {
     content: "";
     position: absolute;
     top: 0;
@@ -59,16 +62,12 @@ body {
 }
 
 @media (min-width: 1024px) {
-    .min-width-fit {
+    .min-w-fit {
         min-width: fit-content;
     }
     
     .w-min-w-fit {
         width: fit-content;
         min-width: fit-content;
-    }
-
-    .min-w-58 {
-        min-width: 58rem;
     }
 }
