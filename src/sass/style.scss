@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$white: hsl(0, 0%, 100%);
+$slightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
+$slightlyTransparentWhite2: hsla(0, 0%, 100%, 0.6);
+$veryDarkBlue: hsl(233, 47%, 7%);
+$darkDesaturatedBlue: hsl(244, 38%, 16%);
+$softViolet: hsl(277, 64%, 61%);
+
+body {
+    font-family: "Inter", sans-serif;
+    color: $white;
+    font-size: 93.75%;
+}
+
+.bg-dblue {
+    background-color: $veryDarkBlue;
+}
+
+.bg-blue {
+    background-color: $darkDesaturatedBlue;
+}
+
+.bg-violet {
+    background-color: $softViolet;
+}
+
+.text-violet {
+    color: $softViolet;
+}
+
+.text-white {
+    color: $white !important;
+}
+
+.text-white2 {
+    color: $slightlyTransparentWhite;
+}
+
+.text-white3 {
+    color: $slightlyTransparentWhite2;
+}
+
+.lexend-deca {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.hero-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $softViolet;
+    opacity: 0.8;
+}
+
+@media (min-width: 1024px) {
+    .image {
+        min-width: fit-content;
+    }
+    
+    .hero-box {
+        width: fit-content;
+        min-width: fit-content;
+    }
+
+    .my-min-width {
+        min-width: 58rem;
+    }
+}

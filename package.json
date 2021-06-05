@@ -1,0 +1,30 @@
+{
+  "name": "tailwind-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run build & npm run watch",
+    "server": "browser-sync",
+    "server:reload": "browser-sync reload",
+    "watch": "nodemon -e html,js,scss -x \"npm run build & npm run server:reload\" ./index.html",
+    "build": "npm-run-all build:*",
+    "build:compile-sass": "node-sass ./src/sass/style.scss ./dist/css/style.css",
+    "build:css": "SET NODE_ENV=production & postcss ./dist/css/style.css -o ./dist/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "^2.26.14",
+    "cssnano": "^5.0.5",
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.4"
+  }
+}
